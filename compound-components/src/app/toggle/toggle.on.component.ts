@@ -1,11 +1,13 @@
 import {Component, Input} from '@angular/core';
+import {ToggleComponent} from './toggle.component';
 
 @Component({
   selector: 'app-toggle-on',
   template: `
-    <ng-content *ngIf="on"></ng-content>
+    <ng-content *ngIf="toggle.on"></ng-content>
   `
 })
 export class ToggleOnComponent {
-  @Input() on: boolean;
+  constructor(readonly toggle: ToggleComponent) {
+  }
 }

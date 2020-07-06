@@ -17,3 +17,4 @@ import {ToggleModule} from './toggle/toggle.module';
 })
 export class AppModule {
 }
+
