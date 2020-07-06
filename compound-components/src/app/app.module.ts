@@ -1,18 +1,19 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { ToggleComponent } from './toggle/toggle.component';
+import {AppComponent} from './app.component';
+import {ToggleModule} from './toggle/toggle.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToggleComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
